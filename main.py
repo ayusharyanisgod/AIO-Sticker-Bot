@@ -54,7 +54,7 @@ async def start(bot, update):
         quote=True
     )
 
-    @bughunter0.on_message(filters.command(["help"]))
+@bughunter0.on_message(filters.command(["help"]))
 async def help(bot, message):
     tx = await message.reply_text("Checking Sticker")
     
