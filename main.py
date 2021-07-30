@@ -30,7 +30,8 @@ I can do many thing for you, just like Get PNG image format of any sticker,Get S
 
 JOIN_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Updates Channel ⬆️', url='https://t.me/PremiumValleyUpdates')
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
         ]]
     )
 
