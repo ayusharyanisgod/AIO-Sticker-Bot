@@ -59,6 +59,17 @@ JOIN_BUTTON = InlineKeyboardMarkup(
         ]]
     )
 
+HELP_BUTTON = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
+        ],
+    [
+        InlineKeyboardButton('🔙 Back',callback_data='cbclose'),
+        ]]
+    
+    )
+        
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
 @bughunter0.on_message(filters.command(["start"]))
@@ -75,7 +86,7 @@ async def start(bot, update):
 @bughunter0.on_message(filters.command(["help"]))
 async def start(bot, update):
     text = HELP_STRING.format(update.from_user.mention)
-    reply_markup = JOIN_BUTTON
+    reply_markup = HELP_BUTTON
     await update.reply_text(
         text=text,
         disable_web_page_preview=True,
