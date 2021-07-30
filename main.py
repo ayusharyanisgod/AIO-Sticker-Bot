@@ -43,11 +43,6 @@ JOIN_BUTTON = InlineKeyboardMarkup(
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
 
-@bughunter0.on_message(filters.command(["help"]))
-async def help(bot, message):
- chat_id = str(message.chat.id)
- await bot.send_sticker(chat_id,"CAACAgIAAxkBAAEEDq1g6Y5LLm2DtFwCV2pPNCddwwZQHgAC6AkAAowucAABsFGHedLEzeUgBA")  
-
 @bughunter0.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_STRING.format(update.from_user.mention)
@@ -59,6 +54,10 @@ async def start(bot, update):
         quote=True
     )
 
+    @bughunter0.on_message(filters.command(["help"]))
+async def help(bot, message):
+    tx = await message.reply_text("Checking Sticker")
+    
 @bughunter0.on_message(filters.command(["ping"]))
 async def ping(bot, message):
     start_t = time.time()
