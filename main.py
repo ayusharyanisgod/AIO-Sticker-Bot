@@ -38,7 +38,7 @@ Wonder How I Work ?
 Here is Full Description How i Works.
 
 1️⃣ Ping ( /ping ) - To Check Bot is alive or not.
-        If bot replies with some text then bot is alive
+If bot replies with some text then bot is alive
 2️⃣ Get Sticker ( /getsticker ) - This Command give you a PNG image format of the replied Sticker
 3️⃣ Sticker ID ( /stickerid ) - Reply with a sticker and Get Sticker ID and a Unique ID.
 4️⃣ Find Sticker ( /findsticker ) - Reply to you Sticker ID or Unique ID of Sticker to Get your Sticker Back
