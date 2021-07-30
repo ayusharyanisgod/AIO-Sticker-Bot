@@ -27,6 +27,12 @@ I'm an AIO Sticker Bot.
 
 I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
 
+@bughunter0.on_message(filters.command(["stickerid"]))
+async def stickerid(bot, message):   
+    if message.reply_to_message.sticker:
+       await message.reply(f"**Sticker ID is**  \n `{message.reply_to_message.sticker.file_id}` \n \n ** Unique ID is ** \n\n`{message.reply_to_message.sticker.file_unique_id}`", quote=True)
+    else: 
+       await message.reply("Oops !! Not a sticker file")
 
 JOIN_BUTTON = InlineKeyboardMarkup(
         [[
@@ -36,6 +42,11 @@ JOIN_BUTTON = InlineKeyboardMarkup(
     )
 
 DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
+
+@bughunter0.on_message(filters.command(["help"]))
+async def help(bot, message):
+ chat_id = str(message.chat.id)
+ await bot.send_sticker(chat_id,"CAACAgIAAxkBAAEEDq1g6Y5LLm2DtFwCV2pPNCddwwZQHgAC6AkAAowucAABsFGHedLEzeUgBA")  
 
 @bughunter0.on_message(filters.command(["start"]))
 async def start(bot, update):
