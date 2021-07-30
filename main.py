@@ -33,7 +33,11 @@ I'm an AIO Sticker Bot.
 """
 
 HELP_STRING = """ Hi {}, 
-I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
+Wonder How I Work ?
+
+Here is Full Description How i Works.
+
+"""
 
 @bughunter0.on_message(filters.command(["stickerid"]))
 async def stickerid(bot, message):   
