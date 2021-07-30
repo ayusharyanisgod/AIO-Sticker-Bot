@@ -27,6 +27,9 @@ I'm an AIO Sticker Bot.
 
 I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
 
+HELP_STRING = """ Hi {}, 
+I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
+
 @bughunter0.on_message(filters.command(["stickerid"]))
 async def stickerid(bot, message):   
     if message.reply_to_message.sticker:
@@ -56,7 +59,7 @@ async def start(bot, update):
 
 @bughunter0.on_message(filters.command(["help"]))
 async def start(bot, update):
-    text = START_STRING.format(update.from_user.mention)
+    text = HELP_STRING.format(update.from_user.mention)
     reply_markup = JOIN_BUTTON
     await update.reply_text(
         text=text,
