@@ -23,14 +23,14 @@ bughunter0 = Client(
 )
 
 START_STRING = """ Hi {}, 
-I'm Sticker Bot. 
+I'm an AIO Sticker Bot.
 
-I can Provide all Kind of Sticker Options Here """
+I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
 
 
 JOIN_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('↗ Join Here ↗', url='https://t.me/PremiumValleyUpdates')
+        InlineKeyboardButton('Updates Channel ⬆️', url='https://t.me/PremiumValleyUpdates')
         ]]
     )
 
