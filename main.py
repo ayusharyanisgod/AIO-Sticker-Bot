@@ -25,7 +25,12 @@ bughunter0 = Client(
 START_STRING = """ Hi {}, 
 I'm an AIO Sticker Bot.
 
-I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
+● I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. 
+
+● Still Wonder How I Work ? 
+● Use /help get a Full Brief on How i Works.
+
+"""
 
 HELP_STRING = """ Hi {}, 
 I can do many thing for you, just like Get PNG image format of any sticker,Get Sticker ID and Find Sticker via Its Sticker ID. """
