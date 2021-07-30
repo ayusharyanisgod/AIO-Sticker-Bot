@@ -63,9 +63,6 @@ HELP_BUTTON = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
         InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
-        ],
-    [
-        InlineKeyboardButton('🔙 Back',callback_data='close'),
         ]]
     
     )
