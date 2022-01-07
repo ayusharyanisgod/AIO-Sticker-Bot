@@ -54,15 +54,15 @@ async def stickerid(bot, message):
 
 JOIN_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
-        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/MetaverseNetwork'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/MetaverseNetwork')
         ]]
     )
 
 HELP_BUTTON = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/PremiumValleyUpdates'),
-        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/PremiumValleySupport')
+        InlineKeyboardButton('Updates Channel ⬆️' ,url='https://t.me/MetaverseNetwork'),
+        InlineKeyboardButton('Support Group 🆘' ,url='https://t.me/MetaverseNetwork')
         ]]
     
     )
